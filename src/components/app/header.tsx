@@ -33,8 +33,8 @@ const Header = () => {
   }, [])
 
   return (
-    <header className="fixed left-1/2 z-10 w-full -translate-x-1/2 bg-background">
-      <nav className="mx-auto flex h-16 max-w-screen-xl border-b flex-col gap-4 px-4 py-2.5 lg:flex-row lg:items-center lg:justify-between">
+    <header className="fixed left-1/2 z-50 w-full -translate-x-1/2 bg-background">
+      <nav className="mx-auto flex h-16 max-w-screen-xl flex-col gap-4 border-b px-4 py-2.5 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex min-h-full items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
             <Image
@@ -43,7 +43,7 @@ const Header = () => {
               width={32}
               height={32}
             />
-            <span className="hidden font-semibold text-2xl text-aquamarine sm:block">
+            <span className="hidden text-2xl font-semibold text-aquamarine sm:block">
               Trading Companion
             </span>
           </Link>
@@ -59,7 +59,7 @@ const Header = () => {
         </div>
         <ul
           className={cn(
-            "absolute left-0 top-16 flex w-full flex-col gap-4 bg-background p-4 lg:py-0 text-sm transition-all duration-300 ease-in lg:static lg:w-auto lg:flex-row lg:items-center lg:gap-6 lg:px-0 lg:pb-0 lg:opacity-100 border-b lg:border-none",
+            "absolute left-0 top-16 flex w-full flex-col gap-4 border-b bg-background p-4 text-sm transition-all duration-300 ease-in lg:static lg:w-auto lg:flex-row lg:items-center lg:gap-6 lg:border-none lg:p-0 lg:opacity-100",
             isMenuOpen ? "top-16 opacity-100" : "top-[-400px] opacity-0"
           )}
         >

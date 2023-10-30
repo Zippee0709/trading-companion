@@ -6,8 +6,8 @@ import { Icons } from "@/components/ui/icons"
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col px-4 py-8 border-t">
-      <div className="flex flex-col gap-8 lg:flex-row lg:justify-between items-start max-w-screen-xl mx-auto w-full">
+    <footer className="flex flex-col border-t px-4 py-8">
+      <div className="mx-auto flex w-full max-w-screen-xl flex-col items-start gap-8 lg:flex-row lg:justify-between">
         <Link href="/" className="flex items-center gap-2">
           <Image
             src="/images/trading-companion-logo.png"
@@ -15,11 +15,11 @@ const Footer = () => {
             width={32}
             height={32}
           />
-          <span className="font-semibold text-2xl text-aquamarine sm:block">
+          <span className="text-2xl font-semibold text-aquamarine sm:block">
             Trading Companion
           </span>
         </Link>
-        <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+        <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
           <div className="flex flex-col gap-6">
             <p className="font-semibold uppercase">Resources</p>
             <ul className="flex flex-col gap-4 text-sm text-gray-300">
@@ -67,8 +67,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="my-6 border-gray-100 dark:border-gray-700 lg:my-8 max-w-screen-xl mx-auto w-full" />
-      <div className="flex flex-col gap-4 lg:flex-row lg:justify-between max-w-screen-xl mx-auto w-full">
+      <hr className="mx-auto my-6 w-full max-w-screen-xl border-gray-100 dark:border-gray-700 lg:my-8" />
+      <div className="mx-auto flex w-full max-w-screen-xl flex-col gap-4 lg:flex-row lg:justify-between">
         <p className="text-sm font-medium">
           © Trading Companion 2023 - All rights Reserved.
         </p>

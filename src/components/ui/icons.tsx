@@ -1,12 +1,27 @@
 import React from "react"
-import { Figma, Github, Menu, Moon, Sun, X } from "lucide-react"
-
-const Icons = {
+import {
+  CandlestickChart,
   Figma,
   Github,
+  Landmark,
   Menu,
   Moon,
   Sun,
+  User,
+  Wallet,
+  X,
+} from "lucide-react"
+
+const Icons = {
+  CandlestickChart,
+  Figma,
+  Github,
+  Landmark,
+  Menu,
+  Moon,
+  Sun,
+  User,
+  Wallet,
   X,
 }
 
