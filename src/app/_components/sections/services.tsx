@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "next/image"
-import { OnboardingItems } from "@/datas/onboarding-data"
+import { OnboardingItems } from "@/datas/onboarding.data"
 
 import { Button } from "@/components/ui/button"
 import { OnboardingCard } from "@/app/_components/cards/onboarding-card"

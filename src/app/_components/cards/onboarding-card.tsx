@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image"
 
-import { OnboardingType } from "@/types/onboarding-types"
+import { OnboardingType } from "@/types/onboarding.types"
 
 const OnboardingCard = ({ title, description, image }: OnboardingType) => {
   return (

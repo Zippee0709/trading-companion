@@ -2,6 +2,7 @@ import React from "react"
 
 import { About } from "@/app/_components/sections/about"
 import { Home } from "@/app/_components/sections/home"
+import { Pricing } from "@/app/_components/sections/pricing"
 import { Services } from "@/app/_components/sections/services"
 
 export default function Page() {
@@ -10,6 +11,7 @@ export default function Page() {
       <Home />
       <About />
       <Services />
+      <Pricing />
     </main>
   )
 }

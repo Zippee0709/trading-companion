@@ -1,4 +1,4 @@
-import { OnboardingType } from "@/types/onboarding-types"
+import { OnboardingType } from "@/types/onboarding.types"
 
 export const OnboardingItems: OnboardingType[] = [
   {
