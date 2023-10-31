@@ -14,7 +14,7 @@ const Pricing = () => {
           Simple, transparent pricing that grows with you.
         </p>
       </div>
-      <div className="grid grid-cols-1 justify-between gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-16">
+      <div className="grid grid-cols-1 justify-between gap-8 sm:grid-cols-2 lg:flex lg:w-full lg:grid-cols-3 lg:gap-16">
         {PrincingItems.map((item) => (
           <PricingCard key={item.id} {...item} />
         ))}

@@ -6,7 +6,7 @@ import { Icons } from "@/components/ui/icons"
 
 const PricingCard = ({ title, price, features }: PrincingType) => {
   return (
-    <div className="flex w-[340px] flex-col gap-8 rounded-xl border p-8 shadow">
+    <div className="flex w-[358px] flex-col gap-8 rounded-xl border p-8 shadow">
       <div className="flex flex-col gap-2">
         <h3 className="font-bold">{title}</h3>
         <b className="text-4xl font-extrabold">${price}/mo</b>

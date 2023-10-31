@@ -1,6 +1,7 @@
 import React from "react"
 
 import { About } from "@/app/_components/sections/about"
+import { GetNotified } from "@/app/_components/sections/get-notified"
 import { Home } from "@/app/_components/sections/home"
 import { Pricing } from "@/app/_components/sections/pricing"
 import { Services } from "@/app/_components/sections/services"
@@ -12,6 +13,7 @@ export default function Page() {
       <About />
       <Services />
       <Pricing />
+      <GetNotified />
     </main>
   )
 }
