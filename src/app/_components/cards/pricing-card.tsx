@@ -13,7 +13,7 @@ const PricingCard = ({ title, price, features }: PrincingType) => {
       </div>
       <div className="flex flex-col gap-2">
         {features.map((feature) => (
-          <div className="flex items-center gap-3">
+          <div key={feature.id} className="flex items-center gap-3">
             <Icons.Check className="h-5 w-5" color="#5ED5A8" />
             <p key={feature.id}>{feature.title}</p>
           </div>
