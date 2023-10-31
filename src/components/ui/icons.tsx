@@ -1,6 +1,7 @@
 import React from "react"
 import {
   CandlestickChart,
+  Circle,
   Figma,
   Github,
   Landmark,
@@ -14,6 +15,7 @@ import {
 
 const Icons = {
   CandlestickChart,
+  Circle,
   Figma,
   Github,
   Landmark,
