@@ -22,7 +22,7 @@ const Footer = () => {
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
           <div className="flex flex-col gap-6">
             <p className="font-semibold uppercase">Resources</p>
-            <ul className="flex flex-col gap-4 text-sm text-gray-300">
+            <ul className="flex flex-col gap-4 text-sm text-gray-500 dark:text-gray-300">
               <li>
                 <Link href="/" className="underline-offset-4 hover:underline">
                   Trading
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-6">
             <p className="font-semibold uppercase">Follow us</p>
-            <ul className="flex flex-col gap-4 text-sm text-gray-300">
+            <ul className="flex flex-col gap-4 text-sm text-gray-500 dark:text-gray-300">
               <li>
                 <Link href="/" className="underline-offset-4 hover:underline">
                   GitHub
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col gap-6">
             <p className="font-semibold uppercase">Legal</p>
-            <ul className="flex flex-col gap-4 text-sm text-gray-300">
+            <ul className="flex flex-col gap-4 text-sm text-gray-500 dark:text-gray-300">
               <li>
                 <Link href="/" className="underline-offset-4 hover:underline">
                   Privacy Policy

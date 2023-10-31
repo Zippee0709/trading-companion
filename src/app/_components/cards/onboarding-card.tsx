@@ -14,7 +14,9 @@ const OnboardingCard = ({ title, description, image }: OnboardingType) => {
       />
       <div className="flex flex-col items-center gap-4">
         <h3 className="text-center text-xl font-semibold">{title}</h3>
-        <p className="text-center text-sm text-gray-300">{description}</p>
+        <p className="text-center text-sm text-gray-500 dark:text-gray-300">
+          {description}
+        </p>
       </div>
     </div>
   )
