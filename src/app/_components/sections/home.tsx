@@ -26,6 +26,7 @@ const Home = () => {
               src="/images/stars-texture.png"
               alt="Trading Companion Stars Texture"
               fill
+              sizes="100%"
               style={{ objectFit: "cover", background: "lightgray 50%" }}
             />
           </div>

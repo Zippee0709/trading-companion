@@ -15,8 +15,8 @@ const Services = () => {
         backgroundPosition: "center",
       }}
     >
-      <h2 className="max-w-md text-center text-3xl font-bold text-aquamarine sm:max-w-full lg:text-start lg:text-5xl">
-        Start Trading In Few Steps
+      <h2 className="max-w-md text-center text-3xl font-bold text-aquamarine sm:max-w-4xl lg:text-5xl">
+        Trading And Investment Solution Built In Modern Plateform
       </h2>
       <div className="relative flex w-full flex-col justify-between gap-16 sm:flex-row">
         {OnboardingItems.map((item) => (
