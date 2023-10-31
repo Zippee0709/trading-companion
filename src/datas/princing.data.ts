@@ -23,7 +23,7 @@ export const PrincingItems: PrincingType[] = [
       },
       {
         id: "FF4",
-        title: "Up to 3 IA signals & analysis",
+        title: "Up to 3 AI signals & analysis",
         isActivated: true,
       },
       {
@@ -55,7 +55,7 @@ export const PrincingItems: PrincingType[] = [
       },
       {
         id: "BF4",
-        title: "Up to 20 IA signals",
+        title: "Up to 20 AI signals",
         isActivated: true,
       },
       {
@@ -87,7 +87,7 @@ export const PrincingItems: PrincingType[] = [
       },
       {
         id: "PF4",
-        title: "Unlimited IA signals & analysis",
+        title: "Unlimited AI signals & analysis",
         isActivated: true,
       },
       {
