@@ -40,7 +40,7 @@ const AnimatedRocket = () => {
         transition: { duration: 1, delay: 1 },
       })
     }
-  }, [isClicked])
+  }, [isClicked, controls])
 
   useEffect(() => {
     if (isInView) {
@@ -56,7 +56,7 @@ const AnimatedRocket = () => {
         transition: { duration: 1, delay: 1 },
       })
     }
-  }, [isInView])
+  }, [isInView, controls])
 
   return (
     <motion.svg
