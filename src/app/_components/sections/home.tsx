@@ -23,8 +23,17 @@ const Home = () => {
         </Button>
       </div>
       <div className="relative h-72 w-72 lg:h-[400px] lg:w-[400px]">
-        <div className="landing-radial-gradient flex h-full w-full items-center justify-center rounded-full">
-          <div className="landing-linear-gradient relative h-[85%] w-[85%] rounded-full">
+        <motion.div
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          className="landing-radial-gradient flex h-full w-full items-center justify-center rounded-full"
+        >
+          <motion.div
+            initial={{ scale: 0 }}
+            animate={{ rotate: 360, scale: 1 }}
+            transition={{ delay: 0.5 }}
+            className="landing-linear-gradient relative h-[85%] w-[85%] rounded-full"
+          >
             <Image
               className="rounded-full mix-blend-color-dodge"
               src="/images/stars-texture.png"
@@ -33,8 +42,8 @@ const Home = () => {
               sizes="100%"
               style={{ objectFit: "cover", background: "lightgray 50%" }}
             />
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90">
           <AnimatedRocket />
         </div>

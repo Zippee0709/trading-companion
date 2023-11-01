@@ -35,7 +35,7 @@ const AnimatedRocket = () => {
         x: 0,
         y: 0,
         opacity: 1,
-        transition: { duration: 1 },
+        transition: { duration: 1, delay: 1 },
       })
     }
   }, [isClicked])
@@ -55,8 +55,8 @@ const AnimatedRocket = () => {
       <motion.g id="Rocket">
         <motion.g
           id="engine"
-          animate={{ rotate: 0.5 }}
-          transition={{ duration: 0.1, repeat: Infinity }}
+          animate={{ x: [0, 5, 0], y: [0, 5, 0] }}
+          transition={{ duration: 1, repeat: Infinity }}
         >
           <path
             id="Vector"
