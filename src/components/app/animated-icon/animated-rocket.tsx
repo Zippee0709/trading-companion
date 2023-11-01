@@ -1,11 +1,9 @@
 "use client"
 
-import React, { use, useEffect, useRef, useState } from "react"
-import { motion, useAnimationControls, useInView } from "framer-motion"
+import React, { useEffect, useState } from "react"
+import { motion, useAnimationControls } from "framer-motion"
 
 const AnimatedRocket = () => {
-  const ref = useRef<SVGSVGElement>(null)
-  const isInView = useInView(ref, { amount: 0.5 })
   const controls = useAnimationControls()
   const [isClicked, setIsClicked] = useState(false)
 
@@ -42,25 +40,8 @@ const AnimatedRocket = () => {
     }
   }, [isClicked, controls])
 
-  useEffect(() => {
-    if (isInView) {
-      controls.set({
-        x: 200,
-        y: 200,
-        opacity: 0,
-      })
-      controls.start({
-        x: 0,
-        y: 0,
-        opacity: 1,
-        transition: { duration: 1, delay: 1 },
-      })
-    }
-  }, [isInView, controls])
-
   return (
     <motion.svg
-      ref={ref}
       width="311"
       height="287"
       viewBox="0 0 311 287"
