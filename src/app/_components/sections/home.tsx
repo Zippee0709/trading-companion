@@ -1,7 +1,11 @@
+"use client"
+
 import React from "react"
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 import { Button } from "@/components/ui/button"
+import { AnimatedRocket } from "@/components/app/animated-icon/animated-rocket"
 
 const Home = () => {
   return (
@@ -31,13 +35,9 @@ const Home = () => {
             />
           </div>
         </div>
-        <Image
-          className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-          src="/images/rocket.png"
-          alt="Trading Companion Rocket Logo"
-          width={310.94}
-          height={286.26}
-        />
+        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-90">
+          <AnimatedRocket />
+        </div>
       </div>
     </section>
   )
