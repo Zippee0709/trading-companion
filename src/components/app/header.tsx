@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import { motion } from "framer-motion"
 
 import { cn } from "@/lib/utils"
 import { Button, buttonVariants } from "@/components/ui/button"
@@ -33,7 +34,17 @@ const Header = () => {
   }, [])
 
   return (
-    <header className="fixed left-1/2 z-50 w-full -translate-x-1/2 bg-background">
+    <motion.header
+      className="fixed left-0 top-0 z-50 w-full bg-background"
+      initial={{
+        y: -64,
+        opacity: 0,
+      }}
+      animate={{
+        y: 0,
+        opacity: 1,
+      }}
+    >
       <nav className="mx-auto flex h-16 max-w-screen-xl flex-col gap-4 border-b px-4 py-2.5 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex min-h-full items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
@@ -115,7 +126,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-    </header>
+    </motion.header>
   )
 }
 
