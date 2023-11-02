@@ -1,5 +1,5 @@
 export type OnboardingType = {
-  id: string
+  id: number
   title: string
   description: string
   image: string

@@ -1,8 +1,8 @@
 import React from "react"
-import Image from "next/image"
 import { OnboardingItems } from "@/datas/onboarding.data"
 
 import { Button } from "@/components/ui/button"
+import { AnimatedTextByWord } from "@/components/app/animated-text/animated-text-by-word"
 import { OnboardingCard } from "@/app/_components/cards/onboarding-card"
 
 const Services = () => {
@@ -16,7 +16,7 @@ const Services = () => {
       }}
     >
       <h2 className="max-w-md text-center text-3xl font-bold text-aquamarine sm:max-w-4xl lg:text-5xl">
-        Trading And Investment Solution Built In Modern Plateform
+        <AnimatedTextByWord text="Trading And Investment Solution Built In Modern Plateform" />
       </h2>
       <div className="relative flex w-full flex-col justify-between gap-16 sm:flex-row">
         {OnboardingItems.map((item) => (

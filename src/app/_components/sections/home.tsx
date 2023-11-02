@@ -10,7 +10,7 @@ import { AnimatedTextByWord } from "@/components/app/animated-text/animated-text
 
 const Home = () => {
   return (
-    <section className="flex w-full max-w-screen-xl flex-col items-center gap-16 py-16 lg:min-h-[calc(100vh-64px)] lg:flex-row lg:justify-between lg:gap-36">
+    <section className="flex w-full max-w-screen-xl flex-col items-center gap-16 py-16 lg:min-h-[600px] lg:flex-row lg:justify-between lg:gap-36">
       <div className="order-1 flex max-w-2xl flex-col items-center justify-center gap-6 lg:-order-1 lg:items-start">
         <h2 className="text-center text-3xl font-bold text-aquamarine lg:text-start lg:text-5xl">
           <AnimatedTextByWord text="Join the world's largest crypto exchange with Trading Companion." />
